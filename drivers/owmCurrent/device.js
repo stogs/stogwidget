@@ -15,13 +15,12 @@ class owmCurrent extends Homey.Device {
 
         settings["lat"] = this.homey.geolocation.getLatitude();
         settings["lon"] = this.homey.geolocation.getLongitude();
-        settings["units"] = this.homey.i18n.getUnits();
-        settings["language"] = this.homey.i18n.getLanguage();
+        settings["units"] = 'imperial';
 
         // updating settings object for settings dialogue
         this.setSettings({
                 language: this.homey.i18n.getLanguage(),
-                units: this.homey.i18n.getUnits(),
+                units: 'imperial',
                 lat: this.homey.geolocation.getLatitude(),
                 lon: this.homey.geolocation.getLongitude(),
             })

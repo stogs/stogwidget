@@ -188,7 +188,7 @@ class owmOnecallHourly extends Homey.Device {
 
         this.log(this.getName(), this.getData().id, " Received OWM hourly data");
 
-        let units = this.homey.i18n.getUnits();
+        let units = 'imperial';
         let GEOlocation = this.getName();
 
         let hours = parseInt(this.getSetting("hours"));

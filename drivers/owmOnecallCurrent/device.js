@@ -91,7 +91,7 @@ class owmOnecallCurrent extends Homey.Device {
             this.setSettings(settings);
         }
 
-        settings["units"] = this.homey.i18n.getUnits();
+        settings["units"] = 'imperial';
         settings["language"] = this._getLanguage(settings["language"]); // this.homey.i18n.getLanguage();
 
         // Flows
