@@ -9,7 +9,7 @@
         "large": "/drivers/owmOnecallDaily/assets/images/large.png",
         "small": "/drivers/owmOnecallDaily/assets/images/small.png"
     },
-    "class": "sensor",
+    "class": "other",
     "connectivity": [ "cloud" ],
     "capabilities": [
         "forecast_time",
