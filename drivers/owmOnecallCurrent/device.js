@@ -544,7 +544,7 @@ class owmOnecallCurrent extends Homey.Device {
             let item = this.data[dataKeys[i]]; 
             let capability = dataKeys[i];
             if (dataKeys[i] != undefined){
-                if (this.getCapabilityValue(capability) != item.value){
+                if (this.hasCapability(capability) && this.getCapabilityValue(capability) != item.value){
                     this.log(this.getName() + " Data changed: " + capability + ": " + this.getCapabilityValue(capability) + " => " + item.value);
                     if (item.value == undefined){
                         item.value = null;
